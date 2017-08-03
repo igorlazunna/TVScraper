@@ -34,7 +34,6 @@ show_usage() {
 	echo "                        aired before <seconds> ago">&2
 }
 
-
 api() { 
 	action=$1
 	shift
@@ -49,7 +48,6 @@ api() {
 
 		paramstring="$paramstring&$param=$value"
 	done
-
 
 	auth=""
 	[ -z "$HTTP_USER" ] || auth="--digest -u $HTTP_USER:$HTTP_PASSWORD"
