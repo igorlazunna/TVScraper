@@ -56,6 +56,7 @@ class MyCurl {
 			}
 			curl_setopt($cr, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($cr, CURLOPT_FOLLOWLOCATION, true);
+			curl_setopt($cr, CURLOPT_HTTPAUTH, CURLAUTH_DIGEST);
 			$this->cr = $cr;
 		}
 		$this->url = $url;
